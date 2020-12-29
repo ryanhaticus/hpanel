@@ -1,2 +1,1 @@
-# hpanel
-A javascript library for the CPanel API.
+# This project is still under heavy development. **Do not** use this in production.
