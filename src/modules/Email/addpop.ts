@@ -1,4 +1,4 @@
-interface AddPopParameters {
+export interface AddPopParameters {
   domain: string;
   email: string;
   password: string;

@@ -25,24 +25,5 @@ export default (authorization: Authorization) => {
   });
 };
 
-/*
-
-import api, { Email } from 'hpanel';
-
-// curl -H'Authorization: cpanel username:U7HMR63FHY282DQZ4H5BIH16JLYSO01M' 'https://example.com:2083/execute/Email/addpop?email=newuser&password=12345luggage'
-
-
-api({
-  username: 'username',
-  token: 'U7HMR63FHY282DQZ4H5BIH16JLYSO01M',
-  cpanelUri: 'https://example.com:2083/'
-})
-
-let response = Email.addpop({
-  email: 'newuser',
-  password: '12345luggage'
-});
-
-response...
-
-*/
+// Export modules.
+export * as Email from './modules/Email';

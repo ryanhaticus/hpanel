@@ -1,4 +1,5 @@
 import { FunctionEP, mexecute, FunctionResponse, FunctionCallback } from '..';
+import addpop from './addpop';
 
 export const execute = (ep: FunctionEP, callback: FunctionCallback) => {
   mexecute(
@@ -11,3 +12,5 @@ export const execute = (ep: FunctionEP, callback: FunctionCallback) => {
     }
   );
 };
+
+export { addpop };
