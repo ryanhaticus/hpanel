@@ -1,0 +1,6 @@
+# Don't publish node modules to GitHub.
+node_modules/
+
+# Don't publish the build files to GitHub.
+build/
+
