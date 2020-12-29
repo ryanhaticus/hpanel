@@ -12,35 +12,14 @@ export interface ModuleEP {
   functionEP: FunctionEP;
 }
 
-export interface FunctionResponse {
-  failed: boolean;
-  reason?: string;
-  response: any;
-}
-
-export type FunctionCallback = (functionResponse: FunctionResponse) => void;
-
-export const mexecute = (ep: ModuleEP, callback: FunctionCallback) => {
-  instance.axios
-    .get(`${ep.module}/${ep.functionEP.function}`, {
+export const mexecute = async (ep: ModuleEP) => {
+  const response = await instance.axios.get(
+    `${ep.module}/${ep.functionEP.function}`,
+    {
       params: {
         ...ep.functionEP.parameters
       }
-    })
-    .then((response) => {
-      let data = response.data;
-      callback({
-        failed: !data.result,
-        reason: data.reason,
-        response: data
-      });
-    })
-    .catch((error) => {
-      let data = error.response.data;
-      callback({
-        failed: !data.result,
-        reason: data.reason,
-        response: data
-      });
-    });
+    }
+  );
+  return response;
 };

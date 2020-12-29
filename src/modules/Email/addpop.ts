@@ -1,3 +1,4 @@
+// https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Aadd_pop
 export interface AddPopParameters {
   domain: string;
   email: string;
@@ -6,17 +7,11 @@ export interface AddPopParameters {
   send_welcome_email?: boolean;
 }
 
-import { FunctionResponse } from '..';
 import { execute } from './index';
 
 export default (param: AddPopParameters) => {
-  execute(
-    {
-      function: 'addpop',
-      parameters: param
-    },
-    (functionResponse: FunctionResponse) => {
-      return functionResponse;
-    }
-  );
+  return execute({
+    function: 'add_pop',
+    parameters: param
+  });
 };

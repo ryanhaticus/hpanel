@@ -8,9 +8,13 @@ interface Authorization {
   cpanelUri: string;
 }
 
-// Axios instance decleration.
-export let instance: {
+interface Instance {
   axios: AxiosInstance;
+}
+
+// Axios instance decleration.
+export let instance: Instance = {
+  axios
 };
 
 // Authenticate the user via. a default function ran from importing the module.
@@ -20,7 +24,7 @@ export default (authorization: Authorization) => {
       ? `${authorization.cpanelUri}execute/`
       : `${authorization.cpanelUri}/execute/`,
     headers: {
-      Authorization: `${authorization.username}:${authorization.token}`
+      Authorization: `cpanel ${authorization.username}:${authorization.token}`
     }
   });
 };
