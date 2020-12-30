@@ -37,3 +37,4 @@ export * as Batch from './modules/Batch';
 export * as BlockIP from './modules/BlockIP';
 export * as BoxTrapper from './modules/BoxTrapper';
 export * as Brand from './modules/Brand';
+export * as Branding from './modules/Branding';
