@@ -34,3 +34,4 @@ export * as Email from './modules/Email';
 export * as Backup from './modules/Backup';
 export * as Bandwidth from './modules/Bandwith';
 export * as Batch from './modules/Batch';
+export * as BlockIP from './modules/BlockIP';
