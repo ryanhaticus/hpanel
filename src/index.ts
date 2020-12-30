@@ -38,3 +38,4 @@ export * as BlockIP from './modules/BlockIP';
 export * as BoxTrapper from './modules/BoxTrapper';
 export * as Brand from './modules/Brand';
 export * as Branding from './modules/Branding';
+export * as CacheBuster from './modules/CacheBuster';
