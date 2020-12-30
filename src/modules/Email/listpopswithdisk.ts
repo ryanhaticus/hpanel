@@ -13,7 +13,7 @@ export interface ListPopsWithDiskParameters {
 
 import { execute } from './index';
 
-export default (param: ListPopsWithDiskParameters) => {
+export default (param?: ListPopsWithDiskParameters) => {
   return execute({
     function: 'list_pops_with_disk',
     parameters: param

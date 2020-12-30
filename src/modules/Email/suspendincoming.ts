@@ -5,7 +5,7 @@ export interface SuspendIncomingParameters {
 
 import { execute } from './index';
 
-export default (param: SuspendIncomingParameters) => {
+export default (param?: SuspendIncomingParameters) => {
   return execute({
     function: 'suspend_incoming',
     parameters: param

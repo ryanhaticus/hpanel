@@ -7,7 +7,7 @@ export interface ListMailDomainsParameters {
 
 import { execute } from './index';
 
-export default (param: ListMailDomainsParameters) => {
+export default (param?: ListMailDomainsParameters) => {
   return execute({
     function: 'list_mail_domains',
     parameters: param

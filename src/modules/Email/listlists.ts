@@ -6,7 +6,7 @@ export interface ListListsParameters {
 
 import { execute } from './index';
 
-export default (param: ListListsParameters) => {
+export default (param?: ListListsParameters) => {
   return execute({
     function: 'list_lists',
     parameters: param

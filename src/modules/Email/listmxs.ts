@@ -5,7 +5,7 @@ export interface ListMxsParameters {
 
 import { execute } from './index';
 
-export default (param: ListMxsParameters) => {
+export default (param?: ListMxsParameters) => {
   return execute({
     function: 'list_mxs',
     parameters: param

@@ -5,7 +5,7 @@ export interface GetSpamSettingsParameters {
 
 import { execute } from './index';
 
-export default (param: GetSpamSettingsParameters) => {
+export default (param?: GetSpamSettingsParameters) => {
   return execute({
     function: 'get_spam_settings',
     parameters: param

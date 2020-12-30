@@ -4,7 +4,7 @@ import { instance } from '../';
 
 export interface FunctionEP {
   function: string;
-  parameters: any;
+  parameters?: any;
 }
 
 export interface ModuleEP {
@@ -17,7 +17,9 @@ export const mexecute = async (ep: ModuleEP) => {
     `${ep.module}/${ep.functionEP.function}`,
     {
       params: {
-        ...ep.functionEP.parameters
+        ...(ep.functionEP.parameters != undefined
+          ? ep.functionEP.parameters
+          : {})
       }
     }
   );

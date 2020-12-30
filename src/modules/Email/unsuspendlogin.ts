@@ -5,7 +5,7 @@ export interface UnsuspendLoginParameters {
 
 import { execute } from './index';
 
-export default (param: UnsuspendLoginParameters) => {
+export default (param?: UnsuspendLoginParameters) => {
   return execute({
     function: 'unsuspend_login',
     parameters: param

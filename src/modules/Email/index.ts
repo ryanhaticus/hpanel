@@ -78,7 +78,7 @@ import listmaildomains from './listmaildomains';
 import listpops from './listpops';
 import listpopswithdisk from './listpopswithdisk';
 import listsystemfilterinfo from './listsystemfilterinfo';
-import list_mxs from './list_mxs';
+import list_mxs from './listmxs';
 import passwdlist from './passwdlist';
 import passwdpop from './passwdpop';
 import releaseoutgoing from './releaseoutgoing';

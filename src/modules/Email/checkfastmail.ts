@@ -1,11 +1,9 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Acheck_fastmail
-export interface CheckFastmailParameters {}
 
 import { execute } from './index';
 
-export default (param: CheckFastmailParameters) => {
+export default () => {
   return execute({
-    function: 'check_fastmail',
-    parameters: param
+    function: 'check_fastmail'
   });
 };

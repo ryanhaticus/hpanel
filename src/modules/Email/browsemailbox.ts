@@ -7,7 +7,7 @@ export interface BrowseMailboxParameters {
 
 import { execute } from './index';
 
-export default (param: BrowseMailboxParameters) => {
+export default (param?: BrowseMailboxParameters) => {
   return execute({
     function: 'browse_mailbox',
     parameters: param

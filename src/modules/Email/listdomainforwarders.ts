@@ -5,7 +5,7 @@ export interface ListDomainForwardersParameters {
 
 import { execute } from './index';
 
-export default (param: ListDomainForwardersParameters) => {
+export default (param?: ListDomainForwardersParameters) => {
   return execute({
     function: 'list_domain_forwarders',
     parameters: param

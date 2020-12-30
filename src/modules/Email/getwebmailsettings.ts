@@ -5,7 +5,7 @@ export interface GetWebmailSettingsParameters {
 
 import { execute } from './index';
 
-export default (param: GetWebmailSettingsParameters) => {
+export default (param?: GetWebmailSettingsParameters) => {
   return execute({
     function: 'get_webmail_settings',
     parameters: param

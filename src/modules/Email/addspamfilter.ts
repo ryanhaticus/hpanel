@@ -6,7 +6,7 @@ export interface AddSpamFilterParameters {
 
 import { execute } from './index';
 
-export default (param: AddSpamFilterParameters) => {
+export default (param?: AddSpamFilterParameters) => {
   return execute({
     function: 'add_spam_filter',
     parameters: param

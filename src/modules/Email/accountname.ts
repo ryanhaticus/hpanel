@@ -6,7 +6,7 @@ export interface AccountNameParameters {
 
 import { execute } from './index';
 
-export default (param: AccountNameParameters) => {
+export default (param?: AccountNameParameters) => {
   return execute({
     function: 'account_name',
     parameters: param

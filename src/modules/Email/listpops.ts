@@ -7,7 +7,7 @@ export interface ListPopsParameters {
 
 import { execute } from './index';
 
-export default (param: ListPopsParameters) => {
+export default (param?: ListPopsParameters) => {
   return execute({
     function: 'list_pops',
     parameters: param
