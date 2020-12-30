@@ -64,7 +64,6 @@ import getwebmailsettings from './getwebmailsettings';
 import hasdelegatedmailmanlists from './hasdelegatedmailmanlists';
 import hasplaintextauthentication from './hasplaintextauthentication';
 import holdoutgoing from './holdoutgoing';
-import index from './index';
 import isinteger from './isinteger';
 import listautoresponders from './listautoresponders';
 import listdefaultaddress from './listdefaultaddress';
@@ -169,7 +168,6 @@ export {
   hasdelegatedmailmanlists,
   hasplaintextauthentication,
   holdoutgoing,
-  index,
   isinteger,
   listautoresponders,
   listdefaultaddress,
