@@ -12,7 +12,7 @@ export interface ModuleEP {
   functionEP: FunctionEP;
 }
 
-export const mexecute = async (ep: ModuleEP) => {
+export const mexecute = (ep: ModuleEP) => {
   return instance.axios
     .get(`${ep.module}/${ep.functionEP.function}`, {
       params: {
