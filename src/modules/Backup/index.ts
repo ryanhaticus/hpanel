@@ -6,7 +6,7 @@ import fullbackuptoftp from './fullbackuptoftp';
 import fullbackuptohomedir from './fullbackuptohomedir';
 import fullbackuptoscpwithkey from './fullbackuptoscpwithkey';
 import fullbackuptoscpwithpassword from './fullbackuptoscpwithpassword';
-import listbackusp from './listbackups';
+import listbackups from './listbackups';
 import restoredatabases from './restoredatabases';
 import restoreemailfilters from './restoreemailfilters';
 import restoreemailforwarders from './restoreemailforwarders';
@@ -24,7 +24,7 @@ export {
   fullbackuptohomedir,
   fullbackuptoscpwithkey,
   fullbackuptoscpwithpassword,
-  listbackusp,
+  listbackups,
   restoredatabases,
   restoreemailforwarders,
   restorefiles,
