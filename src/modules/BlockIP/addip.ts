@@ -5,7 +5,7 @@ export interface AddIpParameters {
 
 import { execute } from './index';
 
-export default (param?: AddIpParameters) => {
+export default (param: AddIpParameters) => {
   return execute({
     function: 'add_ip',
     parameters: param

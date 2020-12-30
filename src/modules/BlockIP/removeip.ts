@@ -5,7 +5,7 @@ export interface RemoveIpParameters {
 
 import { execute } from './index';
 
-export default (param?: RemoveIpParameters) => {
+export default (param: RemoveIpParameters) => {
   return execute({
     function: 'remove_ip',
     parameters: param
