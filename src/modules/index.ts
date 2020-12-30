@@ -13,15 +13,18 @@ export interface ModuleEP {
 }
 
 export const mexecute = async (ep: ModuleEP) => {
-  const response = await instance.axios.get(
-    `${ep.module}/${ep.functionEP.function}`,
-    {
+  return instance.axios
+    .get(`${ep.module}/${ep.functionEP.function}`, {
       params: {
         ...(ep.functionEP.parameters != undefined
           ? ep.functionEP.parameters
           : {})
       }
-    }
-  );
-  return response;
+    })
+    .then((res) => {
+      return res.data;
+    })
+    .catch((err) => {
+      return err.response.data;
+    });
 };
