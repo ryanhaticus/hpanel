@@ -36,6 +36,19 @@ export const execute = (ep: FunctionEP) => {
   });
 };
 
+// Remove after.
+import * as fs from 'fs';
+let thing = '';
+let exportt = 'export { ';
+fs.readdirSync('./src/modules/Email').forEach((t) => {
+  thing += `import ${t.split('.')[0]} from './${t.split('.')[0]}'\n`;
+  exportt += `${t.split('.')[0]}, `;
+});
+
+console.log(thing);
+console.log(`${exportt.substring(0, exportt.length - 9)} }`);
+// Remove after.
+
 export {
   accountname,
   addautoresponder,
