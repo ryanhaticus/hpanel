@@ -3,12 +3,7 @@ export interface StoreFilterParameters {
   account?: string;
   filtername: string;
   oldfiltername?: string;
-  action: string;
-  dest?: string;
-  match: string | number;
-  opt?: string;
-  part: string;
-  val: string | number;
+  [propName: string]: any;
 }
 
 import { execute } from './index';

@@ -1,7 +1,7 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Areorder_filters
 export interface ReorderFiltersParameters {
   mailbox: string;
-  filter: string;
+  [propName: string]: any;
 }
 
 import { execute } from './index';
