@@ -1,8 +1,8 @@
 // Import types and execute method from module.
-    import { FunctionEP, mexecute } from '..';
-    
-    // Import Functions
-    import addhost from './addhost';
+import { FunctionEP, mexecute } from '..';
+
+// Import Functions
+import addhost from './addhost';
 import addhostnote from './addhostnote';
 import checkdatabase from './checkdatabase';
 import createdatabase from './createdatabase';
@@ -27,11 +27,36 @@ import setpassword from './setpassword';
 import setprivilegesondatabase from './setprivilegesondatabase';
 import updateprivileges from './updateprivileges';
 
-    export const execute = (ep: FunctionEP) => {
-      return mexecute({
-        module: 'Mysql',
-        functionEP: ep
-      });
-    };
-    
-    export { addhost, addhostnote, checkdatabase, createdatabase, createuser, deletedatabase, deletehost, deleteuser, dumpdatabaseschema, gethostnotes, getprivilegesondatabase, getrestrictions, getserverinformation, listdatabases, listroutines, listusers, locateserver, renamedatabase, renameuser, repairdatabase, revokeaccesstodatabase, setpassword, setprivilegesondatabase, updateprivileges,  };
+export const execute = (ep: FunctionEP) => {
+  return mexecute({
+    module: 'Mysql',
+    functionEP: ep
+  });
+};
+
+export {
+  addhost,
+  addhostnote,
+  checkdatabase,
+  createdatabase,
+  createuser,
+  deletedatabase,
+  deletehost,
+  deleteuser,
+  dumpdatabaseschema,
+  gethostnotes,
+  getprivilegesondatabase,
+  getrestrictions,
+  getserverinformation,
+  listdatabases,
+  listroutines,
+  listusers,
+  locateserver,
+  renamedatabase,
+  renameuser,
+  repairdatabase,
+  revokeaccesstodatabase,
+  setpassword,
+  setprivilegesondatabase,
+  updateprivileges
+};

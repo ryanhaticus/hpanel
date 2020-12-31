@@ -1,8 +1,8 @@
 // Import types and execute method from module.
-    import { FunctionEP, mexecute } from '..';
-    
-    // Import Functions
-    import cancelpendingsslcertificate from './cancelpendingsslcertificate';
+import { FunctionEP, mexecute } from '..';
+
+// Import Functions
+import cancelpendingsslcertificate from './cancelpendingsslcertificate';
 import createshoppingcart from './createshoppingcart';
 import getallproducts from './getallproducts';
 import getcertificatestatusdetails from './getcertificatestatusdetails';
@@ -17,11 +17,26 @@ import setstatusofpendingqueueitems from './setstatusofpendingqueueitems';
 import seturlaftercheckout from './seturlaftercheckout';
 import validatelogintoken from './validatelogintoken';
 
-    export const execute = (ep: FunctionEP) => {
-      return mexecute({
-        module: 'Market',
-        functionEP: ep
-      });
-    };
-    
-    export { cancelpendingsslcertificate, createshoppingcart, getallproducts, getcertificatestatusdetails, getloginurl, getpendingsslcertificates, getproviderslist, getproviderspecificdcvconstraints, getsslcertificateifavailable, processsslpendingqueue, requestsslcertificates, setstatusofpendingqueueitems, seturlaftercheckout, validatelogintoken,  };
+export const execute = (ep: FunctionEP) => {
+  return mexecute({
+    module: 'Market',
+    functionEP: ep
+  });
+};
+
+export {
+  cancelpendingsslcertificate,
+  createshoppingcart,
+  getallproducts,
+  getcertificatestatusdetails,
+  getloginurl,
+  getpendingsslcertificates,
+  getproviderslist,
+  getproviderspecificdcvconstraints,
+  getsslcertificateifavailable,
+  processsslpendingqueue,
+  requestsslcertificates,
+  setstatusofpendingqueueitems,
+  seturlaftercheckout,
+  validatelogintoken
+};

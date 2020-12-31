@@ -1,8 +1,8 @@
 // Import types and execute method from module.
-    import { FunctionEP, mexecute } from '..';
-    
-    // Import Functions
-    import addftp from './addftp';
+import { FunctionEP, mexecute } from '..';
+
+// Import Functions
+import addftp from './addftp';
 import allowsanonymousftp from './allowsanonymousftp';
 import allowsanonymousftpincoming from './allowsanonymousftpincoming';
 import deleteftp from './deleteftp';
@@ -23,11 +23,32 @@ import sethomedir from './sethomedir';
 import setquota from './setquota';
 import setwelcomemessage from './setwelcomemessage';
 
-    export const execute = (ep: FunctionEP) => {
-      return mexecute({
-        module: 'Ftp',
-        functionEP: ep
-      });
-    };
-    
-    export { addftp, allowsanonymousftp, allowsanonymousftpincoming, deleteftp, ftpexists, getftpdaemoninfo, getport, getquota, getwelcomemessage, killsession, listftp, listftpwithdisk, listsessions, passwd, servername, setanonymousftp, setanonymousftpincoming, sethomedir, setquota, setwelcomemessage,  };
+export const execute = (ep: FunctionEP) => {
+  return mexecute({
+    module: 'Ftp',
+    functionEP: ep
+  });
+};
+
+export {
+  addftp,
+  allowsanonymousftp,
+  allowsanonymousftpincoming,
+  deleteftp,
+  ftpexists,
+  getftpdaemoninfo,
+  getport,
+  getquota,
+  getwelcomemessage,
+  killsession,
+  listftp,
+  listftpwithdisk,
+  listsessions,
+  passwd,
+  servername,
+  setanonymousftp,
+  setanonymousftpincoming,
+  sethomedir,
+  setquota,
+  setwelcomemessage
+};

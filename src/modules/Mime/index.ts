@@ -1,8 +1,8 @@
 // Import types and execute method from module.
-    import { FunctionEP, mexecute } from '..';
-    
-    // Import Functions
-    import addhandler from './addhandler';
+import { FunctionEP, mexecute } from '..';
+
+// Import Functions
+import addhandler from './addhandler';
 import addhotlink from './addhotlink';
 import addmime from './addmime';
 import addredirect from './addredirect';
@@ -17,11 +17,26 @@ import listmime from './listmime';
 import listredirects from './listredirects';
 import redirectinfo from './redirectinfo';
 
-    export const execute = (ep: FunctionEP) => {
-      return mexecute({
-        module: 'Mime',
-        functionEP: ep
-      });
-    };
-    
-    export { addhandler, addhotlink, addmime, addredirect, deletehandler, deletehotlink, deletemime, deleteredirect, getredirect, listhandlers, listhotlinks, listmime, listredirects, redirectinfo,  };
+export const execute = (ep: FunctionEP) => {
+  return mexecute({
+    module: 'Mime',
+    functionEP: ep
+  });
+};
+
+export {
+  addhandler,
+  addhotlink,
+  addmime,
+  addredirect,
+  deletehandler,
+  deletehotlink,
+  deletemime,
+  deleteredirect,
+  getredirect,
+  listhandlers,
+  listhotlinks,
+  listmime,
+  listredirects,
+  redirectinfo
+};

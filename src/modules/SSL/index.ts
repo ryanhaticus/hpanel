@@ -1,8 +1,8 @@
 // Import types and execute method from module.
-    import { FunctionEP, mexecute } from '..';
-    
-    // Import Functions
-    import addautosslexcludeddomains from './addautosslexcludeddomains';
+import { FunctionEP, mexecute } from '..';
+
+// Import Functions
+import addautosslexcludeddomains from './addautosslexcludeddomains';
 import cansslredirect from './cansslredirect';
 import checksharedcert from './checksharedcert';
 import deletecert from './deletecert';
@@ -54,11 +54,63 @@ import togglesslredirectfordomains from './togglesslredirectfordomains';
 import uploadcert from './uploadcert';
 import uploadkey from './uploadkey';
 
-    export const execute = (ep: FunctionEP) => {
-      return mexecute({
-        module: 'SSL',
-        functionEP: ep
-      });
-    };
-    
-    export { addautosslexcludeddomains, cansslredirect, checksharedcert, deletecert, deletecsr, deletekey, deletessl, disablemailsni, enablemailsni, fetchbestfordomain, fetchcertificatesforfqdns, fetchcertinfo, fetchkeyandcabundleforcertificate, findcertificatesforkey, findcsrsforkey, generatecert, generatecsr, generatekey, getautosslexcludeddomains, getautosslpendingqueue, getautosslproblems, getcabundle, getcnname, installedhost, installedhosts, installssl, isautosslcheckinprogress, ismailsnisupported, issnisupported, listcerts, listcsrs, listkeys, listsslitems, mailsnistatus, rebuildmailsniconfig, rebuildssldb, removeautosslexcludeddomains, setautosslexcludeddomains, setcertfriendlyname, setcsrfriendlyname, setdefaultkeytype, setkeyfriendlyname, setprimaryssl, setsslshare, showcert, showcsr, showkey, startautosslcheck, togglesslredirectfordomains, uploadcert, uploadkey,  };
+export const execute = (ep: FunctionEP) => {
+  return mexecute({
+    module: 'SSL',
+    functionEP: ep
+  });
+};
+
+export {
+  addautosslexcludeddomains,
+  cansslredirect,
+  checksharedcert,
+  deletecert,
+  deletecsr,
+  deletekey,
+  deletessl,
+  disablemailsni,
+  enablemailsni,
+  fetchbestfordomain,
+  fetchcertificatesforfqdns,
+  fetchcertinfo,
+  fetchkeyandcabundleforcertificate,
+  findcertificatesforkey,
+  findcsrsforkey,
+  generatecert,
+  generatecsr,
+  generatekey,
+  getautosslexcludeddomains,
+  getautosslpendingqueue,
+  getautosslproblems,
+  getcabundle,
+  getcnname,
+  installedhost,
+  installedhosts,
+  installssl,
+  isautosslcheckinprogress,
+  ismailsnisupported,
+  issnisupported,
+  listcerts,
+  listcsrs,
+  listkeys,
+  listsslitems,
+  mailsnistatus,
+  rebuildmailsniconfig,
+  rebuildssldb,
+  removeautosslexcludeddomains,
+  setautosslexcludeddomains,
+  setcertfriendlyname,
+  setcsrfriendlyname,
+  setdefaultkeytype,
+  setkeyfriendlyname,
+  setprimaryssl,
+  setsslshare,
+  showcert,
+  showcsr,
+  showkey,
+  startautosslcheck,
+  togglesslredirectfordomains,
+  uploadcert,
+  uploadkey
+};

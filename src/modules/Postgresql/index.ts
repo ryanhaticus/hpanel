@@ -1,8 +1,8 @@
 // Import types and execute method from module.
-    import { FunctionEP, mexecute } from '..';
-    
-    // Import Functions
-    import createdatabase from './createdatabase';
+import { FunctionEP, mexecute } from '..';
+
+// Import Functions
+import createdatabase from './createdatabase';
 import createuser from './createuser';
 import deletedatabase from './deletedatabase';
 import deleteuser from './deleteuser';
@@ -17,11 +17,26 @@ import revokeallprivileges from './revokeallprivileges';
 import setpassword from './setpassword';
 import updateprivileges from './updateprivileges';
 
-    export const execute = (ep: FunctionEP) => {
-      return mexecute({
-        module: 'Postgresql',
-        functionEP: ep
-      });
-    };
-    
-    export { createdatabase, createuser, deletedatabase, deleteuser, getrestrictions, grantallprivileges, listdatabases, listusers, renamedatabase, renameuser, renameusernopassword, revokeallprivileges, setpassword, updateprivileges,  };
+export const execute = (ep: FunctionEP) => {
+  return mexecute({
+    module: 'Postgresql',
+    functionEP: ep
+  });
+};
+
+export {
+  createdatabase,
+  createuser,
+  deletedatabase,
+  deleteuser,
+  getrestrictions,
+  grantallprivileges,
+  listdatabases,
+  listusers,
+  renamedatabase,
+  renameuser,
+  renameusernopassword,
+  revokeallprivileges,
+  setpassword,
+  updateprivileges
+};
