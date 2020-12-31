@@ -1,13 +1,16 @@
 // Import types and execute method from module.
-import { FunctionEP, mexecute } from '..';
+    import { FunctionEP, mexecute } from '..';
+    
+    // Import Functions
+    import getavailableaddons from './getavailableaddons';
+import getinstancesettings from './getinstancesettings';
+import listaddoninstances from './listaddoninstances';
 
-// Import Functions
-
-export const execute = (ep: FunctionEP) => {
-  return mexecute({
-    module: 'cPAddons',
-    functionEP: ep
-  });
-};
-
-export {};
+    export const execute = (ep: FunctionEP) => {
+      return mexecute({
+        module: 'cPAddons',
+        functionEP: ep
+      });
+    };
+    
+    export { getavailableaddons, getinstancesettings, listaddoninstances,  };

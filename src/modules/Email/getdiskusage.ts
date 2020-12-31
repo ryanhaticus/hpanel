@@ -1,12 +1,12 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Aget_disk_usage
-export interface GetDiskUsageParameters {
-  user: string;
-  domain: string;
+export interface getDiskUsageParameters {
+  user?: number;
+  domain?: number;
 }
 
 import { execute } from './index';
 
-export default (param: GetDiskUsageParameters) => {
+export default (param?: getDiskUsageParameters) => {
   return execute({
     function: 'get_disk_usage',
     parameters: param

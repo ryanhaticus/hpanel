@@ -1,11 +1,11 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Aget_mailbox_autocreate
-export interface GetMailboxAutocreateParameters {
-  email: string;
+export interface getMailboxAutocreateParameters {
+  email?: number;
 }
 
 import { execute } from './index';
 
-export default (param: GetMailboxAutocreateParameters) => {
+export default (param?: getMailboxAutocreateParameters) => {
   return execute({
     function: 'get_mailbox_autocreate',
     parameters: param

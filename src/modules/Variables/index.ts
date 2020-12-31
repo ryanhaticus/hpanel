@@ -1,13 +1,16 @@
 // Import types and execute method from module.
-import { FunctionEP, mexecute } from '..';
+    import { FunctionEP, mexecute } from '..';
+    
+    // Import Functions
+    import getserverinformation from './getserverinformation';
+import getsessioninformation from './getsessioninformation';
+import getuserinformation from './getuserinformation';
 
-// Import Functions
-
-export const execute = (ep: FunctionEP) => {
-  return mexecute({
-    module: 'Variables',
-    functionEP: ep
-  });
-};
-
-export {};
+    export const execute = (ep: FunctionEP) => {
+      return mexecute({
+        module: 'Variables',
+        functionEP: ep
+      });
+    };
+    
+    export { getserverinformation, getsessioninformation, getuserinformation,  };

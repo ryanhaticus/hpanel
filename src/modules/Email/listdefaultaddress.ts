@@ -1,12 +1,12 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Alist_default_address
-export interface ListDefaultAddressParameters {
-  domain?: string;
-  user: string;
+export interface listDefaultAddressParameters {
+  domain: number;
+  user?: number;
 }
 
 import { execute } from './index';
 
-export default (param: ListDefaultAddressParameters) => {
+export default (param: listDefaultAddressParameters) => {
   return execute({
     function: 'list_default_address',
     parameters: param

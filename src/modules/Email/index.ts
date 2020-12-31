@@ -1,8 +1,8 @@
 // Import types and execute method from module.
-import { FunctionEP, mexecute } from '..';
-
-// Import Functions
-import accountname from './accountname';
+    import { FunctionEP, mexecute } from '..';
+    
+    // Import Functions
+    import accountname from './accountname';
 import addautoresponder from './addautoresponder';
 import adddomainforwarder from './adddomainforwarder';
 import addforwarder from './addforwarder';
@@ -30,12 +30,11 @@ import deletemx from './deletemx';
 import deletepop from './deletepop';
 import disablefilter from './disablefilter';
 import disablemailboxautocreate from './disablemailboxautocreate';
-import disablespamassasin from './disablespamassasin';
+import disablespamassassin from './disablespamassassin';
 import disablespamautodelete from './disablespamautodelete';
 import disablespambox from './disablespambox';
 import dispatchclientsettings from './dispatchclientsettings';
 import editpopquota from './editpopquota';
-import enableautospamdelete from './enableautospamdelete';
 import enablefilter from './enablefilter';
 import enablemailboxautocreate from './enablemailboxautocreate';
 import enablespamassassin from './enablespamassassin';
@@ -74,10 +73,10 @@ import listforwarders from './listforwarders';
 import listforwardersbackups from './listforwardersbackups';
 import listlists from './listlists';
 import listmaildomains from './listmaildomains';
+import listmxs from './listmxs';
 import listpops from './listpops';
 import listpopswithdisk from './listpopswithdisk';
 import listsystemfilterinfo from './listsystemfilterinfo';
-import list_mxs from './listmxs';
 import passwdlist from './passwdlist';
 import passwdpop from './passwdpop';
 import releaseoutgoing from './releaseoutgoing';
@@ -98,107 +97,11 @@ import unsuspendlogin from './unsuspendlogin';
 import unsuspendoutgoing from './unsuspendoutgoing';
 import verifypassword from './verifypassword';
 
-export const execute = (ep: FunctionEP) => {
-  return mexecute({
-    module: 'Email',
-    functionEP: ep
-  });
-};
-
-export {
-  accountname,
-  addautoresponder,
-  adddomainforwarder,
-  addforwarder,
-  addlist,
-  addmailmandelegates,
-  addmx,
-  addpop,
-  addspamfilter,
-  browsemailbox,
-  changemx,
-  checkfastmail,
-  checkpipeforwarder,
-  countautoresponders,
-  countfilters,
-  countforwarders,
-  countlists,
-  countpops,
-  deleteautoresponder,
-  deletedomainforwarder,
-  deletefilter,
-  deleteforwarder,
-  deleteheldmessages,
-  deletelist,
-  deletemx,
-  deletepop,
-  disablefilter,
-  disablemailboxautocreate,
-  disablespamassasin,
-  disablespamautodelete,
-  disablespambox,
-  dispatchclientsettings,
-  editpopquota,
-  enableautospamdelete,
-  enablefilter,
-  enablemailboxautocreate,
-  enablespamassassin,
-  enablespambox,
-  fetchcharmaps,
-  ftsrescanmailbox,
-  generatemailmanotp,
-  getautoresponder,
-  getcharsets,
-  getclientsettings,
-  getdefaultemailquota,
-  getdefaultemailquotamib,
-  getdiskusage,
-  getfilter,
-  getheldmessagecount,
-  getliststotaldiskusage,
-  getmailboxautocreate,
-  getmailmandelegates,
-  getmainaccountdiskusage,
-  getmainaccountdiskusagebytes,
-  getmaxemailquota,
-  getmaxemailquotamib,
-  getpopquota,
-  getspamsettings,
-  getwebmailsettings,
-  hasdelegatedmailmanlists,
-  hasplaintextauthentication,
-  holdoutgoing,
-  isinteger,
-  listautoresponders,
-  listdefaultaddress,
-  listdomainforwarders,
-  listfilters,
-  listfiltersbackups,
-  listforwarders,
-  listforwardersbackups,
-  listlists,
-  listmaildomains,
-  listpops,
-  listpopswithdisk,
-  listsystemfilterinfo,
-  list_mxs,
-  passwdlist,
-  passwdpop,
-  releaseoutgoing,
-  removemailmandelegates,
-  reorderfilters,
-  setalwaysaccept,
-  setdefaultaddress,
-  setlistprivacyoptions,
-  statsdbstatus,
-  storefilter,
-  suspendincoming,
-  suspendlogin,
-  suspendoutgoing,
-  tracedelivery,
-  tracefilter,
-  unsuspendincoming,
-  unsuspendlogin,
-  unsuspendoutgoing,
-  verifypassword
-};
+    export const execute = (ep: FunctionEP) => {
+      return mexecute({
+        module: 'Email',
+        functionEP: ep
+      });
+    };
+    
+    export { accountname, addautoresponder, adddomainforwarder, addforwarder, addlist, addmailmandelegates, addmx, addpop, addspamfilter, browsemailbox, changemx, checkfastmail, checkpipeforwarder, countautoresponders, countfilters, countforwarders, countlists, countpops, deleteautoresponder, deletedomainforwarder, deletefilter, deleteforwarder, deleteheldmessages, deletelist, deletemx, deletepop, disablefilter, disablemailboxautocreate, disablespamassassin, disablespamautodelete, disablespambox, dispatchclientsettings, editpopquota, enablefilter, enablemailboxautocreate, enablespamassassin, enablespambox, fetchcharmaps, ftsrescanmailbox, generatemailmanotp, getautoresponder, getcharsets, getclientsettings, getdefaultemailquota, getdefaultemailquotamib, getdiskusage, getfilter, getheldmessagecount, getliststotaldiskusage, getmailboxautocreate, getmailmandelegates, getmainaccountdiskusage, getmainaccountdiskusagebytes, getmaxemailquota, getmaxemailquotamib, getpopquota, getspamsettings, getwebmailsettings, hasdelegatedmailmanlists, hasplaintextauthentication, holdoutgoing, isinteger, listautoresponders, listdefaultaddress, listdomainforwarders, listfilters, listfiltersbackups, listforwarders, listforwardersbackups, listlists, listmaildomains, listmxs, listpops, listpopswithdisk, listsystemfilterinfo, passwdlist, passwdpop, releaseoutgoing, removemailmandelegates, reorderfilters, setalwaysaccept, setdefaultaddress, setlistprivacyoptions, statsdbstatus, storefilter, suspendincoming, suspendlogin, suspendoutgoing, tracedelivery, tracefilter, unsuspendincoming, unsuspendlogin, unsuspendoutgoing, verifypassword,  };

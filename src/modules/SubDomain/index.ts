@@ -1,13 +1,14 @@
 // Import types and execute method from module.
-import { FunctionEP, mexecute } from '..';
+    import { FunctionEP, mexecute } from '..';
+    
+    // Import Functions
+    import addsubdomain from './addsubdomain';
 
-// Import Functions
-
-export const execute = (ep: FunctionEP) => {
-  return mexecute({
-    module: 'SubDomain',
-    functionEP: ep
-  });
-};
-
-export {};
+    export const execute = (ep: FunctionEP) => {
+      return mexecute({
+        module: 'SubDomain',
+        functionEP: ep
+      });
+    };
+    
+    export { addsubdomain,  };

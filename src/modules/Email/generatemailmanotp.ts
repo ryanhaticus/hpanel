@@ -1,13 +1,13 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Agenerate_mailman_otp
-export interface GenerateMailmanOtpParameters {
-  list: string;
+export interface generateMailmanOtpParameters {
+  list?: number;
 }
 
 import { execute } from './index';
 
-export default (param: GenerateMailmanOtpParameters) => {
+export default (param?: generateMailmanOtpParameters) => {
   return execute({
-    function: 'generate_mailmain_otp',
+    function: 'generate_mailman_otp',
     parameters: param
   });
 };

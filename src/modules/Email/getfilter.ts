@@ -1,12 +1,12 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Aget_filter
-export interface GetFilterParameters {
-  account: string;
-  filtername: string;
+export interface getFilterParameters {
+  account?: number;
+  filtername?: number;
 }
 
 import { execute } from './index';
 
-export default (param: GetFilterParameters) => {
+export default (param?: getFilterParameters) => {
   return execute({
     function: 'get_filter',
     parameters: param

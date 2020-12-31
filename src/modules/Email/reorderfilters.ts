@@ -1,12 +1,12 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Areorder_filters
-export interface ReorderFiltersParameters {
-  mailbox: string;
+export interface reorderFiltersParameters {
+  mailbox?: number;
   [propName: string]: any;
 }
 
 import { execute } from './index';
 
-export default (param: ReorderFiltersParameters) => {
+export default (param?: reorderFiltersParameters) => {
   return execute({
     function: 'reorder_filters',
     parameters: param

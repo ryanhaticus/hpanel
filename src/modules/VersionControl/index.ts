@@ -1,13 +1,17 @@
 // Import types and execute method from module.
-import { FunctionEP, mexecute } from '..';
+    import { FunctionEP, mexecute } from '..';
+    
+    // Import Functions
+    import create from './create';
+import delete from './delete';
+import retrieve from './retrieve';
+import update from './update';
 
-// Import Functions
-
-export const execute = (ep: FunctionEP) => {
-  return mexecute({
-    module: 'VersionControl',
-    functionEP: ep
-  });
-};
-
-export {};
+    export const execute = (ep: FunctionEP) => {
+      return mexecute({
+        module: 'VersionControl',
+        functionEP: ep
+      });
+    };
+    
+    export { create, delete, retrieve, update,  };

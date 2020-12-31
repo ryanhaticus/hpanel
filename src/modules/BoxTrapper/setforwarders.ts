@@ -1,12 +1,12 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+BoxTrapper%3A%3Aset_forwarders
-export interface SetForwardersParameters {
-  email: string;
-  forwarder: string;
+export interface setForwardersParameters {
+  email?: number;
+  forwarder?: number;
 }
 
 import { execute } from './index';
 
-export default (param: SetForwardersParameters) => {
+export default (param?: setForwardersParameters) => {
   return execute({
     function: 'set_forwarders',
     parameters: param

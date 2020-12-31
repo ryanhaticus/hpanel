@@ -1,8 +1,8 @@
 // Import types and execute method from module.
-import { FunctionEP, mexecute } from '..';
-
-// Import Functions
-import blacklistmessages from './blacklistmessages';
+    import { FunctionEP, mexecute } from '..';
+    
+    // Import Functions
+    import blacklistmessages from './blacklistmessages';
 import deletemessages from './deletemessages';
 import delivermessages from './delivermessages';
 import getconfiguration from './getconfiguration';
@@ -22,31 +22,11 @@ import setforwarders from './setforwarders';
 import setstatus from './setstatus';
 import whitelistmessages from './whitelistmessages';
 
-export const execute = (ep: FunctionEP) => {
-  return mexecute({
-    module: 'BoxTrapper',
-    functionEP: ep
-  });
-};
-
-export {
-  blacklistmessages,
-  deletemessages,
-  delivermessages,
-  getconfiguration,
-  getemailtemplate,
-  getforwarders,
-  getlog,
-  getmessage,
-  getstatus,
-  ignoremessages,
-  listemailtemplates,
-  listqueuedmessages,
-  processmessages,
-  resetemailtemplate,
-  saveconfiguration,
-  saveemailtemplate,
-  setforwarders,
-  setstatus,
-  whitelistmessages
-};
+    export const execute = (ep: FunctionEP) => {
+      return mexecute({
+        module: 'BoxTrapper',
+        functionEP: ep
+      });
+    };
+    
+    export { blacklistmessages, deletemessages, delivermessages, getconfiguration, getemailtemplate, getforwarders, getlog, getmessage, getstatus, ignoremessages, listemailtemplates, listqueuedmessages, processmessages, resetemailtemplate, saveconfiguration, saveemailtemplate, setforwarders, setstatus, whitelistmessages,  };

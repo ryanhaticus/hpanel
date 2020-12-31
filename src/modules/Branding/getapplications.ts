@@ -1,11 +1,11 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Branding%3A%3Aget_applications
-export interface GetApplicationsParameters {
-  app_keys?: string;
+export interface getApplicationsParameters {
+  app_keys: number;
 }
 
 import { execute } from './index';
 
-export default (param?: GetApplicationsParameters) => {
+export default (param: getApplicationsParameters) => {
   return execute({
     function: 'get_applications',
     parameters: param

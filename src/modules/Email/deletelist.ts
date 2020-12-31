@@ -1,11 +1,11 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Adelete_list
-export interface DeleteListParameters {
-  list: string;
+export interface deleteListParameters {
+  list?: number;
 }
 
 import { execute } from './index';
 
-export default (param: DeleteListParameters) => {
+export default (param?: deleteListParameters) => {
   return execute({
     function: 'delete_list',
     parameters: param

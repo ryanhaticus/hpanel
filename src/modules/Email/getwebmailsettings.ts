@@ -1,11 +1,11 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Aget_webmail_settings
-export interface GetWebmailSettingsParameters {
-  account?: string;
+export interface getWebmailSettingsParameters {
+  account: number;
 }
 
 import { execute } from './index';
 
-export default (param?: GetWebmailSettingsParameters) => {
+export default (param: getWebmailSettingsParameters) => {
   return execute({
     function: 'get_webmail_settings',
     parameters: param

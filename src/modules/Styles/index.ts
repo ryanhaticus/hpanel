@@ -1,13 +1,17 @@
 // Import types and execute method from module.
-import { FunctionEP, mexecute } from '..';
+    import { FunctionEP, mexecute } from '..';
+    
+    // Import Functions
+    import current from './current';
+import list from './list';
+import setdefault from './setdefault';
+import update from './update';
 
-// Import Functions
-
-export const execute = (ep: FunctionEP) => {
-  return mexecute({
-    module: 'Styles',
-    functionEP: ep
-  });
-};
-
-export {};
+    export const execute = (ep: FunctionEP) => {
+      return mexecute({
+        module: 'Styles',
+        functionEP: ep
+      });
+    };
+    
+    export { current, list, setdefault, update,  };

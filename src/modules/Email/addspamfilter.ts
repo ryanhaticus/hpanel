@@ -1,12 +1,12 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Aadd_spam_filter
-export interface AddSpamFilterParameters {
-  required_score?: string;
-  account?: string;
+export interface addSpamFilterParameters {
+  required_score: number;
+  account: number;
 }
 
 import { execute } from './index';
 
-export default (param?: AddSpamFilterParameters) => {
+export default (param: addSpamFilterParameters) => {
   return execute({
     function: 'add_spam_filter',
     parameters: param

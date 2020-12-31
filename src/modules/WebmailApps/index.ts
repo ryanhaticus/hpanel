@@ -1,13 +1,14 @@
 // Import types and execute method from module.
-import { FunctionEP, mexecute } from '..';
+    import { FunctionEP, mexecute } from '..';
+    
+    // Import Functions
+    import listwebmailapps from './listwebmailapps';
 
-// Import Functions
-
-export const execute = (ep: FunctionEP) => {
-  return mexecute({
-    module: 'WebmailApps',
-    functionEP: ep
-  });
-};
-
-export {};
+    export const execute = (ep: FunctionEP) => {
+      return mexecute({
+        module: 'WebmailApps',
+        functionEP: ep
+      });
+    };
+    
+    export { listwebmailapps,  };

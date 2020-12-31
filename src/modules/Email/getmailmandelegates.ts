@@ -1,11 +1,11 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Aget_mailman_delegates
-export interface GetMailmanDelegatesParameters {
-  list: string;
+export interface getMailmanDelegatesParameters {
+  list?: number;
 }
 
 import { execute } from './index';
 
-export default (param: GetMailmanDelegatesParameters) => {
+export default (param?: getMailmanDelegatesParameters) => {
   return execute({
     function: 'get_mailman_delegates',
     parameters: param

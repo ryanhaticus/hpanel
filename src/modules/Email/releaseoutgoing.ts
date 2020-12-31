@@ -1,11 +1,11 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Arelease_outgoing
-export interface ReleaseOutgoingParameters {
-  email: string;
+export interface releaseOutgoingParameters {
+  email?: number;
 }
 
 import { execute } from './index';
 
-export default (param: ReleaseOutgoingParameters) => {
+export default (param?: releaseOutgoingParameters) => {
   return execute({
     function: 'release_outgoing',
     parameters: param

@@ -1,13 +1,17 @@
 // Import types and execute method from module.
-import { FunctionEP, mexecute } from '..';
+    import { FunctionEP, mexecute } from '..';
+    
+    // Import Functions
+    import create from './create';
+import delete from './delete';
+import update from './update';
+import verify from './verify';
 
-// Import Functions
-
-export const execute = (ep: FunctionEP) => {
-  return mexecute({
-    module: 'KnownHosts',
-    functionEP: ep
-  });
-};
-
-export {};
+    export const execute = (ep: FunctionEP) => {
+      return mexecute({
+        module: 'KnownHosts',
+        functionEP: ep
+      });
+    };
+    
+    export { create, delete, update, verify,  };

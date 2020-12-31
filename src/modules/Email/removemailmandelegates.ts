@@ -1,12 +1,12 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Aremove_mailman_delegates
-export interface RemoveMailmanDelegatesParameters {
-  list: string;
-  delegates: string;
+export interface removeMailmanDelegatesParameters {
+  list?: number;
+  delegates?: number;
 }
 
 import { execute } from './index';
 
-export default (param: RemoveMailmanDelegatesParameters) => {
+export default (param?: removeMailmanDelegatesParameters) => {
   return execute({
     function: 'remove_mailman_delegates',
     parameters: param

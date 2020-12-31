@@ -1,12 +1,12 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Adispatch_client_settings
-export interface DispatchClientSettingsParameters {
-  to: string;
-  account: string;
+export interface dispatchClientSettingsParameters {
+  to?: number;
+  account?: number;
 }
 
 import { execute } from './index';
 
-export default (param: DispatchClientSettingsParameters) => {
+export default (param?: dispatchClientSettingsParameters) => {
   return execute({
     function: 'dispatch_client_settings',
     parameters: param

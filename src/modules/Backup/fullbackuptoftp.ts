@@ -1,19 +1,19 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Backup%3A%3Afullbackup_to_ftp
-export interface FullbackupToFtpParameters {
-  variant?: string;
-  username: string;
-  password: string;
-  host: string;
-  directory?: string;
-  port?: number;
-  email?: string;
-  dbackup?: string;
-  dbackup_mysql?: string;
+export interface fullbackupToFtpParameters {
+  variant: number;
+  username?: number;
+  password?: number;
+  host?: number;
+  directory: number;
+  port: number;
+  email: number;
+  dbbackup: number;
+  dbbackup_mysql: number;
 }
 
 import { execute } from './index';
 
-export default (param: FullbackupToFtpParameters) => {
+export default (param: fullbackupToFtpParameters) => {
   return execute({
     function: 'fullbackup_to_ftp',
     parameters: param

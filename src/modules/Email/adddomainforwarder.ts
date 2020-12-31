@@ -1,12 +1,12 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Aadd_domain_forwarder
-export interface AddDomainForwarderParameters {
-  domain: string;
-  destdomain: string;
+export interface addDomainForwarderParameters {
+  domain?: number;
+  destdomain?: number;
 }
 
 import { execute } from './index';
 
-export default (param: AddDomainForwarderParameters) => {
+export default (param?: addDomainForwarderParameters) => {
   return execute({
     function: 'add_domain_forwarder',
     parameters: param

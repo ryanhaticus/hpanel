@@ -1,9 +1,13 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Email%3A%3Alist_forwarders_backups
+export interface listForwardersBackupsParameters {
+  domain: number;
+}
 
 import { execute } from './index';
 
-export default () => {
+export default (param: listForwardersBackupsParameters) => {
   return execute({
-    function: 'list_forwarders_backups'
+    function: 'list_forwarders_backups',
+    parameters: param
   });
 };

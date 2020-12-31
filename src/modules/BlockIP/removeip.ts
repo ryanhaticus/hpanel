@@ -1,11 +1,11 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+BlockIP%3A%3Aremove_ip
-export interface RemoveIpParameters {
-  ip: string;
+export interface removeIpParameters {
+  ip?: number;
 }
 
 import { execute } from './index';
 
-export default (param: RemoveIpParameters) => {
+export default (param?: removeIpParameters) => {
   return execute({
     function: 'remove_ip',
     parameters: param

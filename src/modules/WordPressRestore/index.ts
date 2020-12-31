@@ -1,13 +1,16 @@
 // Import types and execute method from module.
-import { FunctionEP, mexecute } from '..';
+    import { FunctionEP, mexecute } from '..';
+    
+    // Import Functions
+    import anyrunning from './anyrunning';
+import cleanup from './cleanup';
+import start from './start';
 
-// Import Functions
-
-export const execute = (ep: FunctionEP) => {
-  return mexecute({
-    module: 'WordPressRestore',
-    functionEP: ep
-  });
-};
-
-export {};
+    export const execute = (ep: FunctionEP) => {
+      return mexecute({
+        module: 'WordPressRestore',
+        functionEP: ep
+      });
+    };
+    
+    export { anyrunning, cleanup, start,  };
