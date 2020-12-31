@@ -31,7 +31,7 @@ export default (authorization: Authorization) => {
 
 // Export modules.
 export * as Backup from './modules/Backup';
-export * as Bandwith from './modules/Bandwith';
+export * as Bandwith from './modules/Bandwidth';
 export * as Batch from './modules/Batch';
 export * as BlockIP from './modules/BlockIP';
 export * as BoxTrapper from './modules/BoxTrapper';
