@@ -7,7 +7,7 @@ import isenabled from './isenabled';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Contactus',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

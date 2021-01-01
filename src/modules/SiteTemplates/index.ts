@@ -9,7 +9,7 @@ import publish from './publish';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'SiteTemplates',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

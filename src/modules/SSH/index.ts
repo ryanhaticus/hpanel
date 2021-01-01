@@ -7,7 +7,7 @@ import getport from './getport';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'SSH',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

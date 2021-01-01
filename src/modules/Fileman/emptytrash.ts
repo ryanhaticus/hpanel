@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'empty_trash'
+    function: 'empty_trash',
   });
 };

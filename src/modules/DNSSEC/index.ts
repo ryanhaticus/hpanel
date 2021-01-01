@@ -18,7 +18,7 @@ import unsetnsec3 from './unsetnsec3';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'DNSSEC',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -34,5 +34,5 @@ export {
   importzonekey,
   removezonekey,
   setnsec3,
-  unsetnsec3
+  unsetnsec3,
 };

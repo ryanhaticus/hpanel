@@ -10,7 +10,7 @@ import revoke from './revoke';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Tokens',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

@@ -8,7 +8,7 @@ import removeip from './removeip';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'BlockIP',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

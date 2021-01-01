@@ -7,7 +7,7 @@ import firstfilerelativeuri from './firstfilerelativeuri';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Parser',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

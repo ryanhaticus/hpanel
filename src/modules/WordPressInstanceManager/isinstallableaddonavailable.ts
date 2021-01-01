@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'is_installable_addon_available'
+    function: 'is_installable_addon_available',
   });
 };

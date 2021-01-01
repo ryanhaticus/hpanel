@@ -7,7 +7,7 @@ import getrequiredstrength from './getrequiredstrength';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'PasswdStrength',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

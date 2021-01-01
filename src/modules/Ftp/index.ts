@@ -26,7 +26,7 @@ import setwelcomemessage from './setwelcomemessage';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Ftp',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -50,5 +50,5 @@ export {
   setanonymousftpincoming,
   sethomedir,
   setquota,
-  setwelcomemessage
+  setwelcomemessage,
 };

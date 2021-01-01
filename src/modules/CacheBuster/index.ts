@@ -8,7 +8,7 @@ import update from './update';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'CacheBuster',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

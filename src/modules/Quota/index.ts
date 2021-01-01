@@ -8,7 +8,7 @@ import getquotainfo from './getquotainfo';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Quota',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

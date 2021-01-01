@@ -100,7 +100,7 @@ import verifypassword from './verifypassword';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Email',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -198,5 +198,5 @@ export {
   unsuspendincoming,
   unsuspendlogin,
   unsuspendoutgoing,
-  verifypassword
+  verifypassword,
 };

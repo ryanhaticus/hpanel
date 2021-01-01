@@ -10,7 +10,7 @@ import createwebmailsessionforself from './createwebmailsessionforself';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Session',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -18,5 +18,5 @@ export {
   createtempuser,
   createwebmailsessionformailuser,
   createwebmailsessionformailusercheckpassword,
-  createwebmailsessionforself
+  createwebmailsessionforself,
 };

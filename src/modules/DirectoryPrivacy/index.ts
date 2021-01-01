@@ -12,7 +12,7 @@ import listusers from './listusers';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'DirectoryPrivacy',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -22,5 +22,5 @@ export {
   deleteuser,
   isdirectoryprotected,
   listdirectories,
-  listusers
+  listusers,
 };

@@ -10,7 +10,7 @@ import updateuserpreference from './updateuserpreference';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'SpamAssassin',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -18,5 +18,5 @@ export {
   clearspambox,
   getsymbolictestnames,
   getuserpreferences,
-  updateuserpreference
+  updateuserpreference,
 };

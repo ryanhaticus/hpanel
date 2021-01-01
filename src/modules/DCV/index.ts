@@ -9,7 +9,7 @@ import ensuredomainscanpassdcv from './ensuredomainscanpassdcv';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'DCV',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'get_charsets'
+    function: 'get_charsets',
   });
 };

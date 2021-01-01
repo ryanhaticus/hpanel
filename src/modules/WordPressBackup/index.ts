@@ -12,7 +12,7 @@ import start from './start';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'WordPressBackup',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

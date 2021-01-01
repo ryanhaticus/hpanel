@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'php_ini_get_user_paths'
+    function: 'php_ini_get_user_paths',
   });
 };

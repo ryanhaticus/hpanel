@@ -7,7 +7,7 @@ import read from './read';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Brand',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

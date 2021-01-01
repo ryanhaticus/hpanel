@@ -9,7 +9,7 @@ import lookup from './lookup';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'DNS',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

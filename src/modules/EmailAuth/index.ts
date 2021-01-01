@@ -15,7 +15,7 @@ import validatecurrentspfs from './validatecurrentspfs';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'EmailAuth',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -28,5 +28,5 @@ export {
   installspfrecords,
   validatecurrentdkims,
   validatecurrentptrs,
-  validatecurrentspfs
+  validatecurrentspfs,
 };

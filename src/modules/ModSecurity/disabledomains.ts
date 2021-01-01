@@ -1,13 +1,13 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+ModSecurity%3A%3Adisable_domains
 export interface disableDomainsParameters {
-  domains?: number;
+  domains: string;
 }
 
 import { execute } from './index';
 
-export default (param?: disableDomainsParameters) => {
+export default (param: disableDomainsParameters) => {
   return execute({
     function: 'disable_domains',
-    parameters: param
+    parameters: param,
   });
 };

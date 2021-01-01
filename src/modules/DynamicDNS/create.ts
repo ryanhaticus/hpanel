@@ -1,7 +1,7 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+DynamicDNS%3A%3Acreate
 export interface createParameters {
-  domain?: number;
-  description: number;
+  domain: string;
+  description?: string;
 }
 
 import { execute } from './index';
@@ -9,6 +9,6 @@ import { execute } from './index';
 export default (param: createParameters) => {
   return execute({
     function: 'create',
-    parameters: param
+    parameters: param,
   });
 };

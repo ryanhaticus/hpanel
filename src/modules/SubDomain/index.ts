@@ -7,7 +7,7 @@ import addsubdomain from './addsubdomain';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'SubDomain',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

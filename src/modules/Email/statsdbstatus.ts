@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'stats_db_status'
+    function: 'stats_db_status',
   });
 };

@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'get_ftp_daemon_info'
+    function: 'get_ftp_daemon_info',
   });
 };

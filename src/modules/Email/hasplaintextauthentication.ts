@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'has_plaintext_authentication'
+    function: 'has_plaintext_authentication',
   });
 };

@@ -8,7 +8,7 @@ import saveconfiguration from './saveconfiguration';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'StatsManager',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

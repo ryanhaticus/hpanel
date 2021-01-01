@@ -7,7 +7,7 @@ import sendtestmessage from './sendtestmessage';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Pushbullet',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

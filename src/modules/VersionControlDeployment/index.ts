@@ -9,7 +9,7 @@ import retrieve from './retrieve';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'VersionControlDeployment',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

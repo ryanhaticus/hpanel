@@ -25,7 +25,7 @@ import whitelistmessages from './whitelistmessages';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'BoxTrapper',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -48,5 +48,5 @@ export {
   saveemailtemplate,
   setforwarders,
   setstatus,
-  whitelistmessages
+  whitelistmessages,
 };

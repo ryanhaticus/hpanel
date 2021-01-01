@@ -11,7 +11,7 @@ import updatedelegate from './updatedelegate';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'CCS',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -20,5 +20,5 @@ export {
   listdelegates,
   listusers,
   removedelegate,
-  updatedelegate
+  updatedelegate,
 };

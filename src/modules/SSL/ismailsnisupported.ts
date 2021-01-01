@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'is_mail_sni_supported'
+    function: 'is_mail_sni_supported',
   });
 };

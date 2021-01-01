@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'create_temp_user'
+    function: 'create_temp_user',
   });
 };

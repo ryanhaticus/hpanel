@@ -7,7 +7,7 @@ import listaccounts from './listaccounts';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Resellers',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

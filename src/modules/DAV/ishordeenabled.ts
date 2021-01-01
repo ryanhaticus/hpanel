@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'is_horde_enabled'
+    function: 'is_horde_enabled',
   });
 };

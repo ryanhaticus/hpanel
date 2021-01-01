@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'get_last_or_current_logged_in_ip'
+    function: 'get_last_or_current_logged_in_ip',
   });
 };

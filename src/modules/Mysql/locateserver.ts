@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'locate_server'
+    function: 'locate_server',
   });
 };

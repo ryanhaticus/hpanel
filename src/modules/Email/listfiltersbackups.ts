@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'list_filters_backups'
+    function: 'list_filters_backups',
   });
 };

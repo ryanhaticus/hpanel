@@ -7,7 +7,7 @@ import getrecommendations from './getrecommendations';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'EA4',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

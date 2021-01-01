@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'delete_hotlink'
+    function: 'delete_hotlink',
   });
 };

@@ -7,7 +7,7 @@ import strict from './strict';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Batch',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

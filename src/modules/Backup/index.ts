@@ -15,7 +15,7 @@ import restorefiles from './restorefiles';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Backup',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -28,5 +28,5 @@ export {
   restoredatabases,
   restoreemailfilters,
   restoreemailforwarders,
-  restorefiles
+  restorefiles,
 };

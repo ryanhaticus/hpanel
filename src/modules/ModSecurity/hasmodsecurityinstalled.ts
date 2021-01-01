@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'has_modsecurity_installed'
+    function: 'has_modsecurity_installed',
   });
 };

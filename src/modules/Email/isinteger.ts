@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'is_integer'
+    function: 'is_integer',
   });
 };

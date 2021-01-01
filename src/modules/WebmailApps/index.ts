@@ -7,7 +7,7 @@ import listwebmailapps from './listwebmailapps';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'WebmailApps',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

@@ -1,12 +1,12 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+Ftp%3A%3Aadd_ftp
 export interface addFtpParameters {
-  user?: number;
-  pass?: number;
-  homedir: number;
-  quota: number;
-  disallowdot: boolean;
-  domain: number;
-  pass_hash: number;
+  user: string;
+  pass: string;
+  homedir?: string;
+  quota?: number;
+  disallowdot?: boolean;
+  domain?: string;
+  pass_hash?: string;
 }
 
 import { execute } from './index';
@@ -14,6 +14,6 @@ import { execute } from './index';
 export default (param: addFtpParameters) => {
   return execute({
     function: 'add_ftp',
-    parameters: param
+    parameters: param,
   });
 };

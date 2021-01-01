@@ -7,7 +7,7 @@ import getlastorcurrentloggedinip from './getlastorcurrentloggedinip';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'LastLogin',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

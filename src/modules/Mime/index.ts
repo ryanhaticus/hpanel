@@ -20,7 +20,7 @@ import redirectinfo from './redirectinfo';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Mime',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -38,5 +38,5 @@ export {
   listhotlinks,
   listmime,
   listredirects,
-  redirectinfo
+  redirectinfo,
 };

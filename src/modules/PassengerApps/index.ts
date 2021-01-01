@@ -13,7 +13,7 @@ import unregisterapplication from './unregisterapplication';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'PassengerApps',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -24,5 +24,5 @@ export {
   ensuredeps,
   listapplications,
   registerapplication,
-  unregisterapplication
+  unregisterapplication,
 };

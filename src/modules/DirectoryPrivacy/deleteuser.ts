@@ -1,14 +1,14 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+DirectoryPrivacy%3A%3Adelete_user
 export interface deleteUserParameters {
-  dir?: number;
-  user?: number;
+  dir: string;
+  user: string;
 }
 
 import { execute } from './index';
 
-export default (param?: deleteUserParameters) => {
+export default (param: deleteUserParameters) => {
   return execute({
     function: 'delete_user',
-    parameters: param
+    parameters: param,
   });
 };

@@ -7,7 +7,7 @@ import getdom from './getdom';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Chrome',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

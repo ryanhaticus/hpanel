@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'is_dav_service_enabled'
+    function: 'is_dav_service_enabled',
   });
 };

@@ -14,7 +14,7 @@ import uploadfiles from './uploadfiles';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Fileman',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -26,5 +26,5 @@ export {
   listfiles,
   savefilecontent,
   transcode,
-  uploadfiles
+  uploadfiles,
 };

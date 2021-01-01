@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'get_main_account_disk_usage'
+    function: 'get_main_account_disk_usage',
   });
 };

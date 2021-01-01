@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'enable_all_domains'
+    function: 'enable_all_domains',
   });
 };

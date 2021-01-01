@@ -12,7 +12,7 @@ import unlinkserviceaccount from './unlinkserviceaccount';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'UserManager',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -22,5 +22,5 @@ export {
   listusers,
   lookupserviceaccount,
   lookupuser,
-  unlinkserviceaccount
+  unlinkserviceaccount,
 };

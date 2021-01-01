@@ -30,7 +30,7 @@ import updateprivileges from './updateprivileges';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Mysql',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -58,5 +58,5 @@ export {
   revokeaccesstodatabase,
   setpassword,
   setprivilegesondatabase,
-  updateprivileges
+  updateprivileges,
 };

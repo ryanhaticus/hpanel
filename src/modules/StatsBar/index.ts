@@ -7,7 +7,7 @@ import getstats from './getstats';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'StatsBar',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

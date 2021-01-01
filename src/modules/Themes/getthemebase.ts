@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'get_theme_base'
+    function: 'get_theme_base',
   });
 };

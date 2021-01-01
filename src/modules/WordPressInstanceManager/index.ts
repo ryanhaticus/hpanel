@@ -16,7 +16,7 @@ import startscan from './startscan';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'WordPressInstanceManager',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -30,5 +30,5 @@ export {
   getlatestwordpressversionfromwordpressorg,
   getscanresults,
   isinstallableaddonavailable,
-  startscan
+  startscan,
 };

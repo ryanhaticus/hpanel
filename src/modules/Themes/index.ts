@@ -9,7 +9,7 @@ import update from './update';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Themes',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

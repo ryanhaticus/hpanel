@@ -1,14 +1,14 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+KnownHosts%3A%3Adelete
-export interface deleteParameters {
-  host_name?: number;
-  port: number;
+export interface KHdeleteParameters {
+  host_name: string;
+  port?: number;
 }
 
 import { execute } from './index';
 
-export default (param: deleteParameters) => {
+export default (param: KHdeleteParameters) => {
   return execute({
     function: 'delete',
-    parameters: param
+    parameters: param,
   });
 };

@@ -13,7 +13,7 @@ import listsecretkeys from './listsecretkeys';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'GPG',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -24,5 +24,5 @@ export {
   generatekey,
   importkey,
   listpublickeys,
-  listsecretkeys
+  listsecretkeys,
 };

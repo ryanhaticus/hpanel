@@ -8,7 +8,7 @@ import set from './set';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'NVData',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

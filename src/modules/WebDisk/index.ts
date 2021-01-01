@@ -10,7 +10,7 @@ import setpermissions from './setpermissions';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'WebDisk',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

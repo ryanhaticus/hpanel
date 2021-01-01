@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'add_zone_key'
+    function: 'add_zone_key',
   });
 };

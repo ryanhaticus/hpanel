@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'get_api_version'
+    function: 'get_api_version',
   });
 };

@@ -20,7 +20,7 @@ import updateprivileges from './updateprivileges';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Postgresql',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -38,5 +38,5 @@ export {
   renameusernopassword,
   revokeallprivileges,
   setpassword,
-  updateprivileges
+  updateprivileges,
 };

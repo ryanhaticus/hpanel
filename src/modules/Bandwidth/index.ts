@@ -9,7 +9,7 @@ import query from './query';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Bandwidth',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

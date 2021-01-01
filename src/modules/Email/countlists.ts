@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'count_lists'
+    function: 'count_lists',
   });
 };

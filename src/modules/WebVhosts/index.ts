@@ -8,7 +8,7 @@ import listsslcapabledomains from './listsslcapabledomains';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'WebVhosts',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

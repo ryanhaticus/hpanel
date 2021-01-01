@@ -12,7 +12,7 @@ import listdomains from './listdomains';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'ModSecurity',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -22,5 +22,5 @@ export {
   enablealldomains,
   enabledomains,
   hasmodsecurityinstalled,
-  listdomains
+  listdomains,
 };

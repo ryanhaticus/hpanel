@@ -9,7 +9,7 @@ import listaddoninstances from './listaddoninstances';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'cPAddons',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

@@ -12,7 +12,7 @@ import ishordeenabled from './ishordeenabled';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'DAV',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -22,5 +22,5 @@ export {
   getcalendarcontactsconfig,
   hassharedglobaladdressbook,
   isdavserviceenabled,
-  ishordeenabled
+  ishordeenabled,
 };

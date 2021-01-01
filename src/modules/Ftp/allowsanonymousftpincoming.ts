@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'allows_anonymous_ftp_incoming'
+    function: 'allows_anonymous_ftp_incoming',
   });
 };

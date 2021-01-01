@@ -9,7 +9,7 @@ import setindexing from './setindexing';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'DirectoryIndexes',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

@@ -7,7 +7,7 @@ import getusages from './getusages';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'ResourceUsage',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

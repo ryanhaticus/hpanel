@@ -7,7 +7,7 @@ import listdirectories from './listdirectories';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'DirectoryProtection',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

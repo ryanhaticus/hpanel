@@ -7,7 +7,7 @@ import getinformation from './getinformation';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'ServerInformation',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

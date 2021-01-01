@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'get_server_information'
+    function: 'get_server_information',
   });
 };

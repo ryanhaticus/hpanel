@@ -9,7 +9,7 @@ import start from './start';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'WordPressRestore',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

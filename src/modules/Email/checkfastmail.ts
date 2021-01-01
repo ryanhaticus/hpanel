@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'check_fastmail'
+    function: 'check_fastmail',
   });
 };

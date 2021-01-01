@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'count_filters'
+    function: 'count_filters',
   });
 };

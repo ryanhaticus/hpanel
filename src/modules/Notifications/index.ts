@@ -7,7 +7,7 @@ import getnotificationscount from './getnotificationscount';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Notifications',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

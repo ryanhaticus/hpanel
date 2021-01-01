@@ -11,7 +11,7 @@ import setdescription from './setdescription';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'DynamicDNS',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

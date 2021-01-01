@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'get_default_email_quota_mib'
+    function: 'get_default_email_quota_mib',
   });
 };

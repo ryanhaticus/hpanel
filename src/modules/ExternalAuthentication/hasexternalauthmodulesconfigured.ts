@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'has_external_auth_modules_configured'
+    function: 'has_external_auth_modules_configured',
   });
 };

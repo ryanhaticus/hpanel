@@ -14,7 +14,7 @@ import spritelist from './spritelist';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Branding',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -26,5 +26,5 @@ export {
   getinformationforapplications,
   image,
   include,
-  spritelist
+  spritelist,
 };

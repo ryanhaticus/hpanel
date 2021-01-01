@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'cancel_scan'
+    function: 'cancel_scan',
   });
 };

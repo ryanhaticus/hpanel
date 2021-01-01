@@ -10,7 +10,7 @@ import verify from './verify';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'KnownHosts',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

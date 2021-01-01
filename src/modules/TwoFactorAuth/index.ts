@@ -10,7 +10,7 @@ import setuserconfiguration from './setuserconfiguration';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'TwoFactorAuth',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -18,5 +18,5 @@ export {
   generateuserconfiguration,
   getuserconfiguration,
   removeuserconfiguration,
-  setuserconfiguration
+  setuserconfiguration,
 };

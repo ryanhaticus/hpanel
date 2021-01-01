@@ -11,7 +11,7 @@ import setutf8mailboxnames from './setutf8mailboxnames';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Mailboxes',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -20,5 +20,5 @@ export {
   expungemessagesformailboxguid,
   getmailboxstatuslist,
   hasutf8mailboxnames,
-  setutf8mailboxnames
+  setutf8mailboxnames,
 };

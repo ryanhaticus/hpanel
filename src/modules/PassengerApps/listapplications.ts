@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'list_applications'
+    function: 'list_applications',
   });
 };

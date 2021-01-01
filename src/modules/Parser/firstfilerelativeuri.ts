@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'firstfile_relative_uri'
+    function: 'firstfile_relative_uri',
   });
 };

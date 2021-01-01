@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'list_ssl_capable_domains'
+    function: 'list_ssl_capable_domains',
   });
 };

@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'process_ssl_pending_queue'
+    function: 'process_ssl_pending_queue',
   });
 };

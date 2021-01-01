@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'update_privileges'
+    function: 'update_privileges',
   });
 };

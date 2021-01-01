@@ -11,7 +11,7 @@ import removeauthnlink from './removeauthnlink';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'ExternalAuthentication',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -20,5 +20,5 @@ export {
   configuredmodules,
   getauthnlinks,
   hasexternalauthmodulesconfigured,
-  removeauthnlink
+  removeauthnlink,
 };

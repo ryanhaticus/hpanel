@@ -17,7 +17,7 @@ import phpsetvhostversions from './phpsetvhostversions';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'LangPHP',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -32,5 +32,5 @@ export {
   phpinigetuserpaths,
   phpinisetuserbasicdirectives,
   phpinisetusercontent,
-  phpsetvhostversions
+  phpsetvhostversions,
 };

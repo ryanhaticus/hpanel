@@ -57,7 +57,7 @@ import uploadkey from './uploadkey';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'SSL',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -112,5 +112,5 @@ export {
   startautosslcheck,
   togglesslredirectfordomains,
   uploadcert,
-  uploadkey
+  uploadkey,
 };

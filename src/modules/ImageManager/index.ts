@@ -10,7 +10,7 @@ import resizeimage from './resizeimage';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'ImageManager',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

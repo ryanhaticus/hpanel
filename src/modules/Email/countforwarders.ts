@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'count_forwarders'
+    function: 'count_forwarders',
   });
 };

@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'main_domain_builtin_subdomain_aliases'
+    function: 'main_domain_builtin_subdomain_aliases',
   });
 };

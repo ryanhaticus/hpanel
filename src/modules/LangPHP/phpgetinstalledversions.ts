@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'php_get_installed_versions'
+    function: 'php_get_installed_versions',
   });
 };

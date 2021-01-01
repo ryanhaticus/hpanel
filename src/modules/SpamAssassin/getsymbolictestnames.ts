@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'get_symbolic_test_names'
+    function: 'get_symbolic_test_names',
   });
 };

@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'remove_user_configuration'
+    function: 'remove_user_configuration',
   });
 };

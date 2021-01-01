@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'list_email_templates'
+    function: 'list_email_templates',
   });
 };

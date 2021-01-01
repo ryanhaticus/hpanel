@@ -10,7 +10,7 @@ import update from './update';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Styles',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

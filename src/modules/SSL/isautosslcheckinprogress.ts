@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'is_autossl_check_in_progress'
+    function: 'is_autossl_check_in_progress',
   });
 };

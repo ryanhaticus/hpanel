@@ -20,7 +20,7 @@ import validatelogintoken from './validatelogintoken';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Market',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -38,5 +38,5 @@ export {
   requestsslcertificates,
   setstatusofpendingqueueitems,
   seturlaftercheckout,
-  validatelogintoken
+  validatelogintoken,
 };

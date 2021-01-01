@@ -9,7 +9,7 @@ import getuserinformation from './getuserinformation';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Variables',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

@@ -9,7 +9,7 @@ import setsettings from './setsettings';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'LogManager',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

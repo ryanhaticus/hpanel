@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'save_file_content'
+    function: 'save_file_content',
   });
 };

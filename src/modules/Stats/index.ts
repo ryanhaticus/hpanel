@@ -10,7 +10,7 @@ import liststatsbydomain from './liststatsbydomain';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Stats',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

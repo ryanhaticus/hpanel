@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'installed_hosts'
+    function: 'installed_hosts',
   });
 };

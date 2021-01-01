@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'clear_spam_box'
+    function: 'clear_spam_box',
   });
 };

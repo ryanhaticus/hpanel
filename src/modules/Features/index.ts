@@ -9,7 +9,7 @@ import listfeatures from './listfeatures';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Features',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

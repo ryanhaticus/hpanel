@@ -1,7 +1,7 @@
 // https://documentation.cpanel.net/display/DD/UAPI+Functions+-+DomainInfo%3A%3Asingle_domain_data
 export interface singleDomainDataParameters {
-  domain?: number;
-  return_https_redirect_status: boolean;
+  domain: string;
+  return_https_redirect_status?: boolean;
 }
 
 import { execute } from './index';
@@ -9,6 +9,6 @@ import { execute } from './index';
 export default (param: singleDomainDataParameters) => {
   return execute({
     function: 'single_domain_data',
-    parameters: param
+    parameters: param,
   });
 };

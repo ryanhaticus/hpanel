@@ -10,7 +10,7 @@ import singledomaindata from './singledomaindata';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'DomainInfo',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
@@ -18,5 +18,5 @@ export {
   domainsdata,
   listdomains,
   maindomainbuiltinsubdomainaliases,
-  singledomaindata
+  singledomaindata,
 };

@@ -9,7 +9,7 @@ import setlocale from './setlocale';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Locale',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

@@ -8,7 +8,7 @@ import geteximportsssl from './geteximportsssl';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Chkservd',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 

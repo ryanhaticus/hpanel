@@ -4,6 +4,6 @@ import { execute } from './index';
 
 export default () => {
   return execute({
-    function: 'get_max_email_quota'
+    function: 'get_max_email_quota',
   });
 };

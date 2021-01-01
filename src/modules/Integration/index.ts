@@ -7,7 +7,7 @@ import fetchurl from './fetchurl';
 export const execute = (ep: FunctionEP) => {
   return mexecute({
     module: 'Integration',
-    functionEP: ep
+    functionEP: ep,
   });
 };
 
