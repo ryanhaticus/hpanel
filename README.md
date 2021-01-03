@@ -45,7 +45,7 @@ JavaScript:
 const hpanel = require('hpanel');
 
 // Authorize via. API Token
-hpanel.defualt({
+hpanel.default({
   // For security, it is best if these credentials are implemented via a .env file.
   username: 'my-cpanel-username',
   token: 'ABCDEFGH...',
