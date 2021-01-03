@@ -6,8 +6,8 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ryanhuellen/hpanel"
+    "type": "git",
+    "url": "git+https://github.com/ryanhuellen/hpanel.git"
   },
   "scripts": {
     "build": "tsc",
@@ -29,5 +29,9 @@
   },
   "dependencies": {
     "axios": "^0.21.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ryanhuellen/hpanel/issues"
+  },
+  "homepage": "https://github.com/ryanhuellen/hpanel#readme"
 }
