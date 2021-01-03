@@ -4,6 +4,8 @@ An unofficial CPanel client for the Node runtime.
 
 At the moment, this project only supports the [**UAPI**](https://documentation.cpanel.net/display/DD/Guide+to+UAPI) API.
 
+![Travis CI Status](https://api.travis-ci.com/ryanhuellen/hpanel.svg?branch=main)
+
 ## Installation
 
 `npm install hpanel`
