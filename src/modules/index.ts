@@ -25,6 +25,8 @@ export const mexecute = (ep: ModuleEP) => {
       return res.data;
     })
     .catch((err) => {
-      return err.response.data || 'Invalid authorization credentials';
+      return err.response == null
+        ? 'Invalid authorization credentials'
+        : err.response.data;
     });
 };
