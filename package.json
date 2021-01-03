@@ -5,6 +5,10 @@
   "module": "true",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ryanhuellen/hpanel"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev --respawn src/"
@@ -15,7 +19,7 @@
     "api",
     "typescript"
   ],
-  "author": "Ryan Huellen ",
+  "author": "Ryan Huellen",
   "license": "MIT",
   "devDependencies": {
     "@tsconfig/node12": "^1.0.7",
